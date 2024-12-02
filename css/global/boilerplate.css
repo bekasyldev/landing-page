@@ -1,0 +1,57 @@
+:root {
+    --color-black: hsla(240, 1%, 19%, 1);
+    --color-grey: hsla(48, 4%, 38%, 1);
+    --color-white: hsla(0, 0%, 100%, 1);
+    --color-green: hsla(158, 24%, 55%, 1);
+    --color-brown: hsla(40, 27%, 94%, 1);
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  main {
+    overflow-x: clip;
+  }
+  
+  body {
+    font-family: 'Figtree', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin: 0;
+    color: var(--color-black);
+  }
+  
+  h1,
+  h2,
+  h3 {
+    line-height: 1.2;
+    font-weight: 800;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  p {
+    color: var(--color-black);
+    line-height: 1.5;
+  }
+  
+  img {
+    display: block;
+    height: auto;
+  }
+
+  li {
+    list-style: none;
+  }
+  
+
+  .star {
+    height: 24px;
+    width: 24px;
+  }
+  

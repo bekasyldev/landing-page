@@ -1,0 +1,136 @@
+/* Help Section Base Styles */
+.help {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .help__header {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .help__title {
+    font-size: 2.75rem;
+    font-weight: 700;
+    font-family: 'Yatra One';
+  }
+  
+  .help__description {
+    width: 66%;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Cards Container */
+  .help__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Individual Card Styles */
+  .help__card {
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Courier New', Courier, monospace;
+
+  }
+  
+  .help__card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  
+  .help__card-text {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  
+  /* Footer Inside Cards */
+  .help__card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .help__reward {
+    font-size: 0.85rem;
+    background-color: var(--color-green);
+    font-weight: 400;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Figtree', Arial, Helvetica, sans-serif;
+  }
+  
+  .help__deadline {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  /* Button */
+  .help__button {
+    margin-top: 20px;
+    padding: 20px 24px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .help__button:hover {
+    background-color: #555;
+  }
+  
+  /* Responsive Design */
+  
+  /* Mobile Phones (320px - 768px) */
+  @media (max-width: 768px) {
+    .help__cards {
+      flex-direction: column;
+      align-items: center;
+      gap: 28px;
+    }
+  
+    .help__card {
+      width: 100%;
+      max-width: 350px;
+    }
+  }
+  
+  /* Tablets (768px - 1024px) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .help__cards {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  
+    .help__card {
+      width: 45%; /* Adjust card width for tablet screens */
+    }
+  }
+  
+  /* Desktops (1024px and above) */
+  @media (min-width: 1024px) {
+    .help__cards {
+      gap: 30px;
+    }
+  
+    .help__card {
+      width: 30%; /* Three cards per row on desktops */
+    }
+  }

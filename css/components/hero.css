@@ -1,0 +1,152 @@
+.hero {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    position: relative;
+}
+
+.hero__content {
+    max-width: 500px;
+}
+
+.hero h1 {
+  font-family: 'Yatra One';
+  font-size: 52px;
+  color: var(--color-blue-900);
+}
+
+.hero__info-text {
+    font-weight: 400;
+    font-size: 24px;
+    margin: 24px 0 32px;
+}
+
+.hero__image {
+    position: relative;
+    width: 100%;
+    max-width: 1012px;
+    height: 720px;
+}
+
+.hero__image-bg {
+    position: absolute;
+    width: 671px;
+    height: 720px;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.hero__image-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.hero__image-illustration {
+    position: absolute;
+    width: 1012px;
+    height: 570px;
+    left: -146px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.hero__image-illustration img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+    .hero__image {
+        max-width: 800px;
+        height: 600px;
+    }
+
+    .hero__image-bg {
+        width: 500px;
+        height: 600px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero__image-illustration {
+        width: 800px;
+        height: 450px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero h1 {
+        font-size: 56px;
+    }
+
+    .hero__info-text {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        gap: 60px;
+        text-align: center;
+    }
+
+    .hero__image {
+        max-width: 600px;
+        height: 400px;
+        margin-top: -30px;
+    }
+
+    .hero__image-bg {
+        width: 400px;
+        height: 400px;
+    }
+
+    .hero__image-illustration {
+        width: 600px;
+        height: 338px;
+    }
+
+    .hero__content {
+        max-width: 100%;
+        padding: 0 24px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero__info-text {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero__image {
+        max-width: 320px;
+        height: 300px;
+        margin-top: -20px;
+    }
+
+    .hero__image-bg {
+        width: 280px;
+        height: 300px;
+    }
+
+    .hero__image-illustration {
+        width: 320px;
+        height: 180px;
+    }
+}
+
+

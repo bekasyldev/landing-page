@@ -1,0 +1,125 @@
+.hero {
+    margin: 30px 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.hero__content {
+    flex: 1;
+    max-width: 500px;
+    z-index: 2;
+}
+
+.hero__info-title {
+    font-family: 'Yatra One';
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero__info-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.hero__info-button {
+    padding: 15px 30px;
+    background-color: var(--color-green);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero__right {
+    position: relative;
+    max-width: 1012px;
+    height: 720px;
+}
+
+.hero__image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero__image-bg {
+    position: absolute;
+    width: 671px;
+    height: 720px;
+    top: 142px;
+    left: 12px;
+}
+
+.hero__image-illustration {
+    position: absolute;
+    width: 1012px;
+    height: 569.58px;
+    top: 165px;
+    left: -146px;
+    z-index: 2;
+}
+
+/* Мобильные телефоны (320px - 768px) */
+@media screen and (max-width: 767px) {
+    .hero {
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .hero__content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero__info-title {
+        font-size: 2rem;
+    }
+
+    .hero__info-text {
+        font-size: 1rem;
+    }
+
+    .hero__right {
+        height: 400px;
+        max-width: 100%;
+    }
+}
+
+/* Планшеты (768px - 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .hero {
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .hero__info-title {
+        font-size: 2.5rem;
+    }
+
+    .hero__right {
+        height: 500px;
+        max-width: 450px;
+    }
+}
+
+/* Десктопы (1024px и выше) */
+@media screen and (min-width: 1024px) {
+    .hero {
+        padding: 0 40px;
+    }
+
+    .hero__right {
+        max-width: 1012px;
+    }
+} 

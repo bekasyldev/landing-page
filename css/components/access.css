@@ -1,0 +1,100 @@
+/* Access Section Base Styles */
+#early-access {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+    gap: 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .access__text {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .access__text h2 {
+    font-family: 'Yatra One';
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .access__text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .access__text button {
+    padding: 15px 30px;
+    background-color: var(--color-green);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .access__text button:hover {
+    background-color: #4caf73; /* Slightly darker green for hover effect */
+  }
+  
+  /* Image Styles */
+  picture img {
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+  }
+  
+  picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 500px; /* Ensures image doesn't grow too large */
+    margin: 0 auto;
+  }
+  
+  /* Responsive Design */
+  
+  /* Mobile Phones (320px - 768px) */
+  @media (max-width: 768px) {
+    #early-access {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .access__text {
+      max-width: 100%;
+    }
+  
+    picture {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  
+    picture img {
+      max-width: 80%; /* Reduce image size for small screens */
+    }
+  
+    .access__text h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  /* Tablets (768px - 1024px) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    #early-access {
+      gap: 30px;
+    }
+  
+    .access__text h2 {
+      font-size: 2.25rem;
+    }
+  
+    picture img {
+      max-width: 400px;
+    }
+  }

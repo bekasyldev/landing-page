@@ -1,0 +1,65 @@
+.work {
+    width: 100%;
+    margin: 4rem 0 8rem;
+
+  }
+
+  .work__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .work__text-title {
+    font-family: 'Yatra One';
+    font-size: 3rem;
+    line-height: 64px;
+  }
+  
+  .work__text p {
+    font-size: 18px;
+    width: 100%;
+  }
+  
+  .work__cards {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 1.5rem; 
+    margin-top: 2rem; 
+  }
+  
+  .card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1; 
+    text-align: center; 
+    max-width: 30%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card p {
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .work__cards {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .card {
+      max-width: 100%; 
+    }
+  }
